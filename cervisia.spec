@@ -9,6 +9,7 @@ License:	GPLv2+
 Url:		http://www.kde.org
 Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
+BuildRequires:	pkgconfig(Qt5Core)
 Requires:	cvs
 Conflicts:	kdesdk4-core < 1:4.11.0
 Conflicts:	kdesdk4-devel < 1:4.11.0
