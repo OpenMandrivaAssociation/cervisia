@@ -10,6 +10,16 @@ Url:		http://www.kde.org
 Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
 BuildRequires:	pkgconfig(Qt5Core)
+BuildRequires:	pkgconfig(Qt5Widgets)
+BuildRequires:	pkgconfig(Qt5DBus)
+BuildRequires:	cmake(KF5Parts)
+BuildRequires:	cmake(KF5DocTools)
+BuildRequires:	cmake(KF5Init)
+BuildRequires:	cmake(KF5IconThemes)
+BuildRequires:	cmake(KF5Notifications)
+BuildRequires:	cmake(KF5WidgetsAddons)
+BuildRequires:	cmake(KF5ItemViews)
+BuildRequires:	cmake(KF5Su)
 Requires:	cvs
 Conflicts:	kdesdk4-core < 1:4.11.0
 Conflicts:	kdesdk4-devel < 1:4.11.0
