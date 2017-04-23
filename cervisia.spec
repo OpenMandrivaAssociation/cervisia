@@ -1,7 +1,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 Summary:	CVS frontend for KDE
 Name:		cervisia
-Version:	17.03.80
+Version:	17.04.0
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
@@ -27,7 +27,7 @@ Conflicts:	kdesdk4-devel < 1:4.11.0
 %description
 CVS frontend for KDE.
 
-%files
+%files -f %{name}.lang,cvsservice.lang
 %{_bindir}/cervisia
 %{_bindir}/cvsaskpass
 %{_bindir}/cvsservice5
@@ -47,7 +47,6 @@ CVS frontend for KDE.
 %{_datadir}/icons/*/*/*/vcs-*.*
 %{_datadir}/icons/*/*/*/cervisia.*
 %{_mandir}/man1/cervisia.1*
-%doc %{_docdir}/HTML/en/cervisia
 
 #----------------------------------------------------------------------------
 
@@ -60,3 +59,5 @@ CVS frontend for KDE.
 
 %install
 %ninja_install -C build
+%find_lang %{name} --with-man --with-html
+%find_lang cvsservice
