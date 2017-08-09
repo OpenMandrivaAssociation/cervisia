@@ -1,7 +1,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 Summary:	CVS frontend for KDE
 Name:		cervisia
-Version:	17.04.3
+Version:	17.07.90
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
@@ -35,7 +35,7 @@ CVS frontend for KDE.
 %{_libdir}/libkdeinit5_cvsaskpass.so
 %{_libdir}/libkdeinit5_cvsservice.so
 %{_libdir}/qt5/plugins/cervisiapart5.so
-%{_datadir}/applications/org.kde.cervisia5.desktop
+%{_datadir}/applications/org.kde.cervisia.desktop
 %{_datadir}/config.kcfg/cervisiapart.kcfg
 %{_datadir}/dbus-1/interfaces/org.kde.cervisia5.*
 %{_datadir}/knotifications5/cervisia.notifyrc
