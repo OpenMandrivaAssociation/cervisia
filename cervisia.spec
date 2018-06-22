@@ -1,7 +1,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 Summary:	CVS frontend for KDE
 Name:		cervisia
-Version:	 17.12.2
+Version:	 18.04.2
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
@@ -27,7 +27,7 @@ Conflicts:	kdesdk4-devel < 1:4.11.0
 %description
 CVS frontend for KDE.
 
-%files -f %{name}.lang,cvsservice.lang
+%files -f %{name}.lang -f cvsservice.lang
 %{_bindir}/cervisia
 %{_bindir}/cvsaskpass
 %{_bindir}/cvsservice5
