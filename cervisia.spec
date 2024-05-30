@@ -2,7 +2,7 @@
 Summary:	CVS frontend for KDE
 Name:		cervisia
 Version:	24.02.0
-Release:	1
+Release:	2
 Epoch:		1
 Group:		Graphical desktop/KDE
 License:	GPLv2+
