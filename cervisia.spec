@@ -1,7 +1,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 Summary:	CVS frontend for KDE
 Name:		cervisia
-Version:	24.02.0
+Version:	24.08.2
 Release:	2
 Epoch:		1
 Group:		Graphical desktop/KDE
